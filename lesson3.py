@@ -57,7 +57,7 @@ def get_user(user_id):
        return u
     return cache[user_id]
 
-
+u3 = get_user(7)
 
 u1 = get_user(7)
 u2 = get_user(7)
@@ -113,6 +113,7 @@ print (hello)
    git checkout master - вернутся в мастер
    git checkout feature/modifi-lists - переключение между ветками
    git merge feature/modifi-lists - слить изменения
+   git branch - проверить в какой ветке сейчас
    tig - удобное приложение для просмотра commit
    
 '''
