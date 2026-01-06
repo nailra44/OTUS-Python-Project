@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6686b4e5-94d1-4c26-adc8-912f9b008d64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lesson2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "F:/КИНО/OTUS_Python-разработчик.Базовый_курс_2020/OTUS-Python-Project",
     "node.js.detected.package.eslint": "true",

@@ -114,6 +114,11 @@ print("type(a) is type(c) ", type(a) is type(c))
    git checkout feature/modifi-lists - переключение между ветками
    git merge feature/modifi-lists - слить изменения
    git branch - проверить в какой ветке сейчас
+   git branch -M main переименовать branch 
+   git remote add origin https://github.com/nailra44/OTUS-Python-Project.git - добавить удалённый репозиторий
+   git remote -v - проверить добавление
+   git push -u origin main - запушить проект в репозиторий
    tig - удобное приложение для просмотра commit
    
+   nailra44@yandex.ru
 '''
