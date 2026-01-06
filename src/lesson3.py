@@ -119,6 +119,7 @@ print("type(a) is type(c) ", type(a) is type(c))
    git remote -v - проверить добавление
    git push -u origin main - запушить проект в репозиторий
    tig - удобное приложение для просмотра commit
+   tig - удобное приложение для просмотра commit
    
    nailra44@yandex.ru
 '''
