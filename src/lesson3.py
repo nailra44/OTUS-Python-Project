@@ -72,7 +72,7 @@ u1 is not u2 # is True
 print("type(a)", type(a))
 print("type(a) is type(b) ", type(a) is type(b))
 print("type(a) is type(c) ", type(a) is type(c))
-print (hello)
+
 
 '''инициализация репозитория - git init
    добаление файла git add lesson3.py
