@@ -118,8 +118,11 @@ print("type(a) is type(c) ", type(a) is type(c))
    git remote add origin https://github.com/nailra44/OTUS-Python-Project.git - добавить удалённый репозиторий
    git remote -v - проверить добавление
    git push -u origin main - запушить проект в репозиторий
+   
    tig - удобное приложение для просмотра commit
-   tig - удобное приложение для просмотра commit
+   git checkout origin/main -- src/ - добавить из github отсутствующие файлы на локальном компе
+   git show origin/main:src/ - просмотр дерева на github
+   
    
    nailra44@yandex.ru
 '''
