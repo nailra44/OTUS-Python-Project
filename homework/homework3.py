@@ -6,6 +6,7 @@ TODO - написать функцию, которая на вход прини�
 TODO - создать декоратор для замера времени выполнения функции
 
 """
+from functools import wraps
 from time import time
 import time
 
@@ -71,6 +72,32 @@ def log_decorators(func):
 def write_sumi():
     print("выполняю суммирование")
     return "Done"
+
+def measure(func):
+    @wraps(func) # сохраняет метаданные оригинальной функции
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        stop = time.perf_counter()
+        elapsed = stop - start
+        print(f"время выполнения функции {func.__name__} равно {elapsed}")
+        return result
+    return wrapper
+
+
+@measure
+def power3(*args, p=3):
+    lol = []
+    orig = []
+    for arg in args:
+        lol.append(arg ** p)
+        orig.append(arg)
+    return lol, orig
+
+power3(5,6,9,8,7,4,5,7,5,7,5,4,6,7,4,23,54,5,987,54,987,6545,79,5,5,8,55,8,5,8,5,8,5,8,5,8,p=2)
+
+
+
 
 write_sumi()
 
