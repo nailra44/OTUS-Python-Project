@@ -7,6 +7,7 @@ TODO - создать декоратор для замера времени вы
 
 """
 from time import time
+import time
 
 
 def power2(*args, p=2):
@@ -57,6 +58,24 @@ def counter_dec(func):
 @counter_dec
 def show_text():
     print("Сколько раз меня вызвали?")
+
+def log_decorators(func):
+    def wrapper():
+        result = func()
+        with open("log.txt", "a", encoding="utf-8") as f:
+            f.write(f" {func.__name__} вызвана в {time.ctime()} \n" )
+        print("запись добавлена в лог файл")
+        return result
+    return wrapper
+@log_decorators
+def write_sumi():
+    print("выполняю суммирование")
+    return "Done"
+
+write_sumi()
+
+
+
 
 show_text()
 show_text()
