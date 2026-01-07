@@ -45,8 +45,23 @@ def decorators(func):
 def hello():
     print("hello чувак")
 
+def counter_dec(func):
+    counter = 0
+    def rap():
+        nonlocal counter
+        counter += 1
+        print(f"вызов функции {func.__name__} количество вызовов {counter} ")
+        return func()
+    return rap
 
+@counter_dec
+def show_text():
+    print("Сколько раз меня вызвали?")
 
+show_text()
+show_text()
+show_text()
+show_text()
 hello()
 
 kol = numerik2(2,8,6,5,4,7,8,9,filters='even')
