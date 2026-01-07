@@ -6,6 +6,8 @@ TODO - написать функцию, которая на вход прини�
 TODO - создать декоратор для замера времени выполнения функции
 
 """
+from time import time
+
 
 def power2(*args, p=2):
     lol = []
@@ -32,14 +34,33 @@ def numerik2(*args, filters='even'):
         for num in args:
             if num % 2 != 0:
                 print(f"{num} : нечетое")
+# decorator раз
+def decorators(func):
+    def wrapper():
+        print(f"начало")
+        func()
+        print("конец")
+    return wrapper
+@decorators
+def hello():
+    print("hello чувак")
 
 
 
+hello()
 
-numerik2(2,8,6,5,4,7,8,9,filters='even')
+kol = numerik2(2,8,6,5,4,7,8,9,filters='even')
 
-#numerik(2,8,6,5,4,7,8,9,)
+
+
+numerik(2,8,6,5,4,7,8,9)
 num = power2(1,2,3,4, p=6)
 print(num)
 #num2 = power(5, 15)
 #print("num2 = ", num2)
+
+
+
+
+
+
