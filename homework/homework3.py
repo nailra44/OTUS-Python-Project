@@ -7,19 +7,18 @@ TODO - создать декоратор для замера времени вы
 
 """
 
-def power(*args, p=2):
-    total = []
-    enter_number = []
+def power2(*args, p=2):
+    lol = []
+    orig = []
     for arg in args:
-        enter_number.append(arg)
-        result = arg * p
-        print(f"{arg} = {result}")
-        print(f"{result}")
+        lol.append(arg ** p)
+        orig.append(arg)
+    return lol, orig
 
-        total.append(result)
-    return enter_number, total
 
-num = power(1,2,3,4, p=5)
+
+
+num = power2(1,2,3,4, p=6)
 print(num)
 #num2 = power(5, 15)
 #print("num2 = ", num2)
