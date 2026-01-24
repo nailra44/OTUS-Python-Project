@@ -123,6 +123,7 @@ print("type(a) is type(c) ", type(a) is type(c))
    git checkout origin/main -- src/ - добавить из github отсутствующие файлы на локальном компе
    git show origin/main:src/ - просмотр дерева на github
    
+   внеси изменения
    
    nailra44@yandex.ru
 '''
